@@ -1,6 +1,6 @@
 .header {
     width: 100%;
-    height: 85vh;
+    height: 95vh;
     background-size: cover;
     background-position: top;
     position: relative;
@@ -18,10 +18,24 @@
     }
 
     &__text-box {
-        position: absolute;
+        @include absCenter;
         top: 40%;
-        left: 50%;
-        transform: translate( -50%, -50% );
         text-align: center;
+    }
+
+    &__icon-box {
+        display: inline-block;
+        font-size: 1rem;
+        font-weight: 400;
+        letter-spacing: .5rem;
+        animation-duration: .5s;
+        padding-top: 12rem;
+
+        @include respond( tab-land ) {
+            padding-top: 6rem;
+            letter-spacing: 0;
+            top: 65%;
+        }
+
     }
 }
