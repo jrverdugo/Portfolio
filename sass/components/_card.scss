@@ -13,13 +13,14 @@
         border-radius: .5rem;
         overflow: hidden;
         box-shadow: 0 1.5rem 4rem rgba($color-white, .25);
-
+        transition: all .8s ease;
         &--front {
             // Come Back to This
             background-color: $color-primary-dark;
         }
 
         &--back {
+            background-color: $color-primary-dark;
             transform: rotateY(180deg);
         }
     }
@@ -36,14 +37,22 @@
         background-size: cover;
         height: 20rem;
         background-blend-mode: screen;
-        --webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         border-top-left-radius: .4rem;
         border-top-right-radius: .4rem;
 
         &--1 {
+            --webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
             background-image: $gradient-primary, url(../img/FabFlix.png);
         }
+
+        &--2 {
+            --webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+            background-image: $gradient-primary, url(../img/Calorie-Tracker.png);
+        }
+
+
     }
 
     &__heading {
@@ -78,6 +87,17 @@
                 }
             }
         }
+    }
+
+    &__cta {
+        @include absCenter;
+        width: 80%;
+        text-align: center;
+    }
+
+    &__text {
+        font-size: 2.5rem;
+        text-align: center;
     }
 
 }

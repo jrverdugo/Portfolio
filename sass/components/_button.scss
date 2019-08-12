@@ -5,20 +5,50 @@
         text-transform: uppercase;
         text-decoration: none;
         display: inline-block;
-        border-radius: 10rem;
+        border-radius: 5rem;
         cursor: pointer;
         font-size: 4rem;
         transition: all .4s ease-in-out;
         text-align: center;
+        margin: 2rem auto;
+    }
+
+    &--header {
         color: $color-white;
+
+        &:not(:last-child) {
+            margin-right: 5rem;
+        }
+
+        &:hover {
+            transform: rotate( 360deg ) scale(1.4);
+            color: $color-primary-dark;
+        }
     }
 
-    &:hover {
-        transform: rotate( 360deg ) scale(1.4);
-        color: $color-primary-dark;
+    &--card {
+        font-size: 2rem;
+        background-color: transparent;
+        padding: 1rem;
+        
+        width: 75%;
+        
+
+        transition: all .2s ease;
+
+        &:hover {
+            display: block;
+
+            color: $color-primary-light-2;
+            background-color: $color-primary-dark-2;
+        }
+
+        &:active,
+        &:focus {
+            transform: translateY( -.1rem );
+            box-shadow: 0 .5rem 1rem rgba( $color-white, .15 );
+        }
     }
 
-    &:not(:last-child) {
-        margin-right: 5rem;
-    }
+    
 }
