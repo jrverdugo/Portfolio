@@ -14,9 +14,8 @@
     }
 
     &:hover {
-        transform: rotate( 360deg );
+        transform: rotate( 360deg ) scale(1.4);
         color: $color-primary-dark;
-
     }
 
     &:not(:last-child) {
