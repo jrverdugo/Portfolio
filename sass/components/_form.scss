@@ -1,0 +1,11 @@
+.form {
+    width: 50%;
+    margin: 0 auto;
+    background-image: $gradient-primary;
+    font-size: 2.5rem;
+
+    &__group {
+        color: white;
+        padding: 0 1rem;
+    }
+}

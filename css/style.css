@@ -159,6 +159,11 @@ body {
     transform: translateY(-0.1rem);
     box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.15); }
 
+.btn--submit {
+  background-color: orange;
+  color: #fff;
+  margin: 1rem; }
+
 .card {
   perspective: 150rem;
   position: relative;
@@ -267,6 +272,15 @@ body {
       .card__text {
         font-size: 2rem; } }
 
+.form {
+  width: 50%;
+  margin: 0 auto;
+  background-image: linear-gradient(to right bottom, rgba(132, 206, 235, 0.9), rgba(136, 96, 208, 0.9));
+  font-size: 2.5rem; }
+  .form__group {
+    color: white;
+    padding: 0 1rem; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -348,3 +362,11 @@ body {
   @media (max-width: 56.25em) {
     .section-projects {
       padding: 22rem 0; } }
+
+.section-contact {
+  background-color: #8860D0;
+  padding: 15rem 0;
+  margin-top: -20vh; }
+  @media (max-width: 56.25em) {
+    .section-contact {
+      padding: 10rem 0; } }

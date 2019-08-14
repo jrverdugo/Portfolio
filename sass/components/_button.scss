@@ -45,5 +45,11 @@
             box-shadow: 0 .5rem 1rem rgba( $color-white, .15 );
         }
     }
+
+    &--submit {
+        background-color: orange;
+        color: $color-white;
+        margin: 1rem;
+    }
     
 }
