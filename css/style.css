@@ -134,10 +134,9 @@ body {
   display: inline-block;
   border-radius: 5rem;
   cursor: pointer;
-  font-size: 4rem;
+  font-size: 3.5rem;
   transition: all .4s ease-in-out;
-  text-align: center;
-  margin: 2rem auto; }
+  text-align: center; }
 
 .btn--header {
   color: #fff; }
@@ -148,10 +147,9 @@ body {
     color: #8860D0; }
 
 .btn--card {
-  font-size: 2rem;
   background-color: transparent;
   padding: 1rem;
-  width: 75%;
+  width: 100%;
   transition: all .2s ease; }
   .btn--card:hover {
     display: block;
@@ -242,12 +240,45 @@ body {
   .card__text {
     font-size: 2.5rem;
     text-align: center; }
+  @media only screen and (max-width: 75em), only screen and (hover: none) {
+    .card {
+      height: auto;
+      border-radius: 0;
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+      .card__side {
+        height: auto;
+        position: relative;
+        box-shadow: none; }
+        .card__side--back {
+          transform: rotateY(0); }
+      .card:hover .card__side--front {
+        transform: rotateY(0); }
+      .card__details {
+        height: auto;
+        padding: 1rem; }
+      .card__cta {
+        position: relative;
+        top: 0%;
+        left: 0;
+        transform: translate(0);
+        width: 100%;
+        padding: 4rem;
+        height: auto; }
+      .card__text {
+        font-size: 2rem; } }
 
 .row {
   max-width: 114rem;
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
+    @media (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 6rem; } }
+  @media (max-width: 56.25em) {
+    .row {
+      max-width: 50rem;
+      padding: 0 3rem; } }
   .row::after {
     content: "";
     display: table;
@@ -256,6 +287,13 @@ body {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
+      @media (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 6rem; } }
+    @media (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {

@@ -14,6 +14,7 @@
         overflow: hidden;
         box-shadow: 0 1.5rem 4rem rgba($color-white, .25);
         transition: all .8s ease;
+
         &--front {
             // Come Back to This
             background-color: $color-primary-dark;
@@ -112,4 +113,45 @@
         text-align: center;
     }
 
+    @media only screen and (max-width: 75em),
+    only screen and (hover:none) {
+        height: auto;
+        border-radius: 0;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+
+        &__side {
+            height: auto;
+            position: relative;
+            box-shadow: none;
+
+            &--back {
+                transform: rotateY(0);
+            }
+        }
+
+        &:hover &__side--front {
+            transform: rotateY(0);
+        }
+
+
+        &__details {
+            height: auto;
+            padding: 1rem;
+        }
+
+        &__cta {
+            position: relative;
+            top: 0%;
+            left: 0;
+            transform: translate(0);
+            width: 100%;
+            padding: 4rem;
+            height: auto;
+        }
+
+
+        &__text {
+            font-size: 2rem;
+        }
+    }
 }

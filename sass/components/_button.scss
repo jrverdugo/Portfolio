@@ -7,10 +7,9 @@
         display: inline-block;
         border-radius: 5rem;
         cursor: pointer;
-        font-size: 4rem;
+        font-size: 3.5rem;
         transition: all .4s ease-in-out;
         text-align: center;
-        margin: 2rem auto;
     }
 
     &--header {
@@ -27,12 +26,9 @@
     }
 
     &--card {
-        font-size: 2rem;
         background-color: transparent;
         padding: 1rem;
-        
-        width: 75%;
-        
+        width: 100%;
 
         transition: all .2s ease;
 
@@ -49,6 +45,5 @@
             box-shadow: 0 .5rem 1rem rgba( $color-white, .15 );
         }
     }
-
     
 }
