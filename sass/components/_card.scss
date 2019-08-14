@@ -52,6 +52,18 @@
             background-image: $gradient-primary, url(../img/Calorie-Tracker.png);
         }
 
+        &--3 {
+            --webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            background-image: $gradient-primary, url(../img/Blog_App.gif);
+        }
+
+        &--4 {
+            --webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+            background-image: $gradient-primary, url(../img/Craps_Game.gif);
+        }
+
 
     }
 

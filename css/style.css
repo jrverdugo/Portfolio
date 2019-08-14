@@ -199,6 +199,14 @@ body {
       --webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
       background-image: linear-gradient(to right bottom, rgba(132, 206, 235, 0.9), rgba(136, 96, 208, 0.9)), url(../img/Calorie-Tracker.png); }
+    .card__image--3 {
+      --webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      background-image: linear-gradient(to right bottom, rgba(132, 206, 235, 0.9), rgba(136, 96, 208, 0.9)), url(../img/Blog_App.gif); }
+    .card__image--4 {
+      --webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+      background-image: linear-gradient(to right bottom, rgba(132, 206, 235, 0.9), rgba(136, 96, 208, 0.9)), url(../img/Craps_Game.gif); }
   .card__heading {
     position: absolute;
     top: 50%;
