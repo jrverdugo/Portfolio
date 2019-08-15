@@ -404,6 +404,6 @@ body {
   padding: 15rem 0;
   margin-top: -20vh;
   clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%); }
-  @media (max-width: 56.25em) {
+  @media (max-width: 37.5em) {
     .section-contact {
-      padding: 10rem 0; } }
+      margin-top: -21vh; } }
