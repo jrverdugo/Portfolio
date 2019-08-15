@@ -39,6 +39,22 @@ $breakpoint argument choices:
     opacity: 1;
     transform: translateY(0); } }
 
+@keyframes wave {
+  0% {
+    transform: rotate(0deg) scale(1); }
+  50% {
+    transform: rotate(180deg) scale(0.975); }
+  100% {
+    transform: rotate(360deg) scale(1); } }
+
+@keyframes pulse {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(0.8); }
+  100% {
+    transform: scale(1); } }
+
 *,
 *:after,
 *:before {
@@ -160,9 +176,14 @@ body {
     box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.15); }
 
 .btn--submit {
-  background-color: orange;
-  color: #fff;
-  margin: 1rem; }
+  color: #5AB9EA;
+  margin: 1rem;
+  background-color: #fff;
+  font-size: 3rem;
+  border-radius: .7rem;
+  transition: all 2s ease; }
+  .btn--submit:hover {
+    animation: pulse 4s infinite linear; }
 
 .card {
   perspective: 150rem;
@@ -275,7 +296,7 @@ body {
 .form {
   width: 50%;
   margin: 0 auto;
-  background-image: linear-gradient(to right bottom, rgba(132, 206, 235, 0.9), rgba(136, 96, 208, 0.9)), url(../img/Cliffside.jpg);
+  background-image: linear-gradient(to right bottom, rgba(136, 96, 208, 0.9), rgba(132, 206, 235, 0.9)), url(../img/Drop.jpg);
   background-size: cover;
   font-size: 2.5rem; }
   .form__group {
@@ -378,7 +399,8 @@ body {
       padding: 22rem 0; } }
 
 .section-contact {
-  background-image: linear-gradient(rgba(136, 96, 208, 0.25), rgba(136, 96, 208, 0.25)), url(../img/Cliffside.jpg);
+  background: transparent;
+  background-image: linear-gradient(to right bottom, rgba(136, 96, 208, 0.9), rgba(132, 206, 235, 0.9)), url(../img/Drop.jpg);
   padding: 15rem 0;
   margin-top: -20vh;
   clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%); }

@@ -1,4 +1,5 @@
 .btn {
+
     &,
     &:link,
     &:visited {
@@ -20,7 +21,7 @@
         }
 
         &:hover {
-            transform: rotate( 360deg ) scale(1.4);
+            transform: rotate(360deg) scale(1.4);
             color: $color-primary-dark;
         }
     }
@@ -41,15 +42,33 @@
 
         &:active,
         &:focus {
-            transform: translateY( -.1rem );
-            box-shadow: 0 .5rem 1rem rgba( $color-white, .15 );
+            transform: translateY(-.1rem);
+            box-shadow: 0 .5rem 1rem rgba($color-white, .15);
         }
     }
 
     &--submit {
-        background-color: orange;
-        color: $color-white;
+        color: $color-primary-dark-2;
         margin: 1rem;
+        background-color: $color-white;
+        font-size: 3rem;
+        border-radius: .7rem;
+        transition: all 2s ease;
+
+        &:hover {
+            animation: pulse 4s infinite linear;
+        }
     }
-    
 }
+
+// Use this class to insert wave-like effect undernearth the submit button on E-mail form
+// .dot{
+//     height: 2.5rem;
+//     width: 80%;
+//     border-radius: 20%;
+//     background-color: $color-primary-dark;
+//     display: bl;
+//     &:hover {
+//         animation: wave 4s infinite linear;
+//     }
+// }
