@@ -71,3 +71,21 @@
         transform: scale(1);
     }
 }
+
+
+@keyframes color {
+    0% {
+        color: $color-primary-dark ;
+        transform: scale(1) ;
+    }
+
+    50% {
+        color: $color-primary-light ;
+        transform: scale(1.25) ;
+    }
+
+    100% {
+        transfocolorrm: $color-primary-dark-2 ;
+        transform: scale(1) ;
+    }
+}

@@ -1,0 +1,43 @@
+.footer {
+    background-color: $color-white-2;
+    padding: 2rem 0;
+    font-size: 1.4rem;
+
+    &__logo-box {
+        margin-bottom: 8rem;
+        text-align: center;
+    }
+
+    &__logo {
+        width: 15rem;
+        height: auto;
+    }
+
+    &__list {
+        text-align: center;
+        list-style: none;
+    }
+
+    &__item {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+    }
+
+    &__link {
+        color: $color-primary-dark;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: inline-block;
+        font-size: 2rem;
+        cursor: pointer;
+
+        &:hover,
+        &:active {
+            box-shadow: 0 1rem 2rem rgba($color-white, .5);
+            animation: color 1s infinite linear;
+        }
+    }
+}

@@ -10,16 +10,13 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald:200,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 
-    <script src="https://kit.fontawesome.com/b21a2d488a.js"></script>
-    <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
-
     <title>Joseph Verdugo | Developer</title>
 </head>
 
 <body>
 
     <!-- Header -->
-    <header class="header">
+    <header class="header" id="header">
         <!-- Logo Area -->
         <div class="header__logo-box">
             LOGO
@@ -50,7 +47,7 @@
     </header>
 
     <main>
-        <section class="section-projects">
+        <section class="section-projects" id="projects">
             <div class="row">
                 <div class="col-1-of-2">
                     <div class="card">
@@ -179,7 +176,7 @@
             </div>
         </section>
 
-        <section class="section-contact">
+        <section class="section-contact" id="contact">
             <div class="form">
                 <form class="gform"
                     action="https://script.google.com/a/uci.edu/macros/s/AKfycbxIFSKj09NcPgK7vu3dUXK64ZiD1JGN5HNwxBDhDA/exec"
@@ -212,6 +209,21 @@
             </div>
         </section>
     </main>
+
+    <footer class="footer">
+        <div class="footer__logo-box">
+            <img src="" alt="Logo">
+        </div>
+
+        <div class="footer__navigation">
+            <ul class="footer__list">
+                <li class="footer__link footer__item" id="head">Home</li>
+                <li class="footer__item footer__link" id="proj">Projects</li>
+                <li class="footer__item footer__link" id="con">Contact Me</li>
+
+            </ul>
+        </div>
+    </footer>
 
     <!--
             <div class="row">
@@ -280,6 +292,11 @@
                 </div>
             </div>
         -->
+        <script src="https://kit.fontawesome.com/b21a2d488a.js"></script>
+    
+        <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
+        <script src="js/jump.js"></script>
+    
 </body>
 
 </html>
