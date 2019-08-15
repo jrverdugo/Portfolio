@@ -11,8 +11,11 @@ $color-gray-light: rgb(205, 187, 216);
 
 // GRADIENTS
 $gradient_primary: linear-gradient(to right bottom,
-            rgba($color-primary-light, 0.9),
-            rgba($color-primary-dark, 0.9));
+    rgba($color-primary-light, 0.9),
+    rgba($color-primary-dark, 0.9));
+    
+$gradient_solid: linear-gradient(rgba($color-primary-dark, 0.25),
+    rgba($color-primary-dark, 0.25));
 
 // FONT
 $default-font-size: 1.6rem;
@@ -22,4 +25,3 @@ $grid-width: 114rem;
 $gutter-vertical: 8rem;
 $gutter-vertical-small: 6rem;
 $gutter-horizontal: 6rem;
-

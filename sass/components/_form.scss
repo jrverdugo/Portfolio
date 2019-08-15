@@ -1,11 +1,30 @@
 .form {
     width: 50%;
     margin: 0 auto;
-    background-image: $gradient-primary;
+    background-image: $gradient-primary, url(../img/Cliffside.jpg);
+    background-size: cover;
     font-size: 2.5rem;
 
     &__group {
         color: white;
         padding: 0 1rem;
+        &:not(:nth-child(3)){
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__input {
+        font-size: 1.5rem;
+        font-family: inherit;
+        color: $color-primary-dark-2;
+        width: 33%;
+        display: block;
+        padding-top: 0;
+
+        &--message {
+            width: 90%;
+            height: 10rem;
+            resize: none;
+        }
     }
 }

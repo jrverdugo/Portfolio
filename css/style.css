@@ -275,11 +275,25 @@ body {
 .form {
   width: 50%;
   margin: 0 auto;
-  background-image: linear-gradient(to right bottom, rgba(132, 206, 235, 0.9), rgba(136, 96, 208, 0.9));
+  background-image: linear-gradient(to right bottom, rgba(132, 206, 235, 0.9), rgba(136, 96, 208, 0.9)), url(../img/Cliffside.jpg);
+  background-size: cover;
   font-size: 2.5rem; }
   .form__group {
     color: white;
     padding: 0 1rem; }
+    .form__group:not(:nth-child(3)) {
+      margin-bottom: 2rem; }
+  .form__input {
+    font-size: 1.5rem;
+    font-family: inherit;
+    color: #5AB9EA;
+    width: 33%;
+    display: block;
+    padding-top: 0; }
+    .form__input--message {
+      width: 90%;
+      height: 10rem;
+      resize: none; }
 
 .row {
   max-width: 114rem;
@@ -364,9 +378,10 @@ body {
       padding: 22rem 0; } }
 
 .section-contact {
-  background-color: #8860D0;
+  background-image: linear-gradient(rgba(136, 96, 208, 0.25), rgba(136, 96, 208, 0.25)), url(../img/Cliffside.jpg);
   padding: 15rem 0;
-  margin-top: -20vh; }
+  margin-top: -20vh;
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%); }
   @media (max-width: 56.25em) {
     .section-contact {
       padding: 10rem 0; } }
