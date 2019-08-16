@@ -89,3 +89,20 @@
         transform: scale(1) ;
     }
 }
+
+@keyframes colorPulse {
+    0% {
+        color: $color-primary-dark ;
+        background-image: $gradient-secondary;
+    }
+
+    50% {
+        color: $color-primary-light-2;
+        background-color: $color-primary;
+    }
+
+    100% {
+        transfocolorrm: $color-primary-dark-2 ;
+        background-image: $gradient-secondary;
+    }
+}

@@ -66,6 +66,17 @@ $breakpoint argument choices:
     transfocolorrm: #5AB9EA;
     transform: scale(1); } }
 
+@keyframes colorPulse {
+  0% {
+    color: #8860D0;
+    background-image: linear-gradient(to right bottom, rgba(136, 96, 208, 0.7), rgba(132, 206, 235, 0.7)); }
+  50% {
+    color: #C1C8E4;
+    background-color: #5680E9; }
+  100% {
+    transfocolorrm: #5AB9EA;
+    background-image: linear-gradient(to right bottom, rgba(136, 96, 208, 0.7), rgba(132, 206, 235, 0.7)); } }
+
 *,
 *:after,
 *:before {
@@ -133,6 +144,13 @@ body {
       animation-name: moveInUp; }
     .heading-primary--sub-3 {
       animation-name: moveInRight; }
+  .heading-primary--projects {
+    color: #5680E9;
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 4rem; }
+    .heading-primary--projects:hover {
+      animation: pulse 1s infinite linear; }
 
 .bg-video {
   top: 0;
@@ -180,8 +198,7 @@ body {
   transition: all .2s ease; }
   .btn--card:hover {
     display: block;
-    color: #C1C8E4;
-    background-color: #5AB9EA; }
+    animation: colorPulse 2s infinite; }
   .btn--card:active, .btn--card:focus {
     transform: translateY(-0.1rem);
     box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.15); }
@@ -189,7 +206,7 @@ body {
 .btn--submit {
   color: #5AB9EA;
   margin: 1rem;
-  background-color: #fff;
+  background-image: linear-gradient(to left top, rgba(255, 255, 255, 0.7), rgba(136, 96, 208, 0.7));
   font-size: 3rem;
   border-radius: .7rem;
   transition: all 2s ease; }
@@ -333,10 +350,13 @@ body {
   font-size: 1.4rem; }
   .footer__logo-box {
     margin-bottom: 8rem;
-    text-align: center; }
-  .footer__logo {
-    width: 15rem;
+    text-align: center;
+    width: 90%;
     height: auto; }
+  .footer__logo {
+    width: 15%;
+    height: auto;
+    padding-left: 4rem; }
   .footer__list {
     text-align: center;
     list-style: none; }
@@ -405,10 +425,14 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
   .header__logo-box {
     position: absolute;
-    top: 4rem;
-    left: 4rem; }
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -40vh;
+    margin-left: -70vh; }
   .header__logo {
-    height: 3.5rem; }
+    height: auto;
+    width: 5px; }
   .header__text-box {
     position: absolute;
     top: 50%;

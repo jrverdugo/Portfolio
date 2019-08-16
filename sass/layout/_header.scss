@@ -8,13 +8,14 @@
     clip-path: polygon( 0 0, 100% 0, 100% 75vh, 0 100% );
 
     &__logo-box {
-        position: absolute;
-        top: 4rem;
-        left: 4rem;
+        @include absCenter;
+        margin-top: -40vh;
+        margin-left: -70vh;
     }
 
     &__logo {
-        height: 3.5rem;
+        height: auto;
+        width: 5px;
     }
 
     &__text-box {

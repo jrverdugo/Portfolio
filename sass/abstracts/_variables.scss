@@ -22,6 +22,10 @@ $gradient_secondary: linear-gradient(to right bottom,
 $gradient_solid: linear-gradient(rgba($color-primary-dark, 0.45),
     rgba($color-primary-dark, 0.45));
 
+$gradient_white: linear-gradient(to left top,
+    rgba($color-white, 0.7),
+    rgba($color-primary-dark, 0.7));
+
 // FONT
 $default-font-size: 1.6rem;
 
@@ -30,3 +34,6 @@ $grid-width: 114rem;
 $gutter-vertical: 8rem;
 $gutter-vertical-small: 6rem;
 $gutter-horizontal: 6rem;
+
+// IMAGE
+$logo: url("../img/Logo.png")

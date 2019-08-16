@@ -52,6 +52,16 @@ body {
         &-3 {
             animation-name: moveInRight;
         }
+    }
 
+    &--projects {
+        color: $color-primary;
+        text-align: center;
+        font-size: 3.5rem;
+        margin-bottom: 4rem;
+
+        &:hover {
+            animation: pulse 1s infinite linear;
+        }
     }
 }

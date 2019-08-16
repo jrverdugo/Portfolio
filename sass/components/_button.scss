@@ -35,9 +35,7 @@
 
         &:hover {
             display: block;
-
-            color: $color-primary-light-2;
-            background-color: $color-primary-dark-2;
+            animation: colorPulse 2s infinite;
         }
 
         &:active,
@@ -50,7 +48,7 @@
     &--submit {
         color: $color-primary-dark-2;
         margin: 1rem;
-        background-color: $color-white;
+        background-image: $gradient-white;
         font-size: 3rem;
         border-radius: .7rem;
         transition: all 2s ease;
